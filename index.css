@@ -1,0 +1,150 @@
+@font-face {
+    font-family: Aileron_Bold;
+    src: url(./assets/Fonts/Aileron-Font-Webkit/Aileron-Regular.woff);
+    font-weight: bold;
+  }
+@font-face {
+    font-family: Aileron_thin;
+    src: url(./assets/Fonts/Aileron-Font-Webkit/Aileron-Light.woff2);
+    font-weight: bold;
+  }
+
+card-content {
+    position: relative;
+    background-color: black;
+    z-index: 999999;
+
+  }
+  
+  .default-image {
+    display: block;
+  }
+  
+  .gif-container {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left:0%;
+    display: none; /* Initially hide GIFs */
+  }
+  
+  .gif {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .arrow {
+    position: absolute;
+    /* transform: translate(-50%, -50%); */
+    /* transition: transform 0.3s ease;  */
+  }
+  img{
+    
+    margin-left:35%;
+    margin-top: 100px;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50px;
+
+ 
+  }
+  .gif-container{
+    justify-content: center;
+    margin-left:35%;
+    align-items: center;
+  justify-content: center;
+
+  }
+  .main_content{
+    position: absolute;
+    right: 50%;
+    color: white;
+    z-index: 999;
+  }
+
+  .gradient-overlay {
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 100px;
+    top: 0;
+    border-radius: 50px 0px 0px 50px;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    z-index: 9;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.443), rgba(255, 255, 255, 0));
+  }
+
+  .Card_title{
+    font-family: Aileron_Bold;
+    font-size: 30px;
+    margin-top: 70px;
+  }
+  .map{
+    font-family: Aileron_Bold;
+    font-size: 40px;
+    inline-size: 200px;
+    margin-top: 10px;
+  }
+  .arrow{
+    font-size: 50px;
+    /* margin-top: 130px; */
+    /* margin-left: -195px; */
+    font-weight: bolder;
+  }
+
+    @media screen and (min-width: 2000px) {
+        .main_content{
+            position: absolute;
+            right: 50%;
+          }
+          img{
+            margin-left: 40%;
+          }
+          .gif-container{
+            justify-content: center;
+            margin-left:40%;
+          }
+          .gradient-overlay {
+            margin-left: 40%;
+          }
+        
+    }
+    @media screen and (min-width: 2500px) {
+        .main_content{
+            position: absolute;
+            right: 52%;
+          }
+          img{
+            margin-left: 40%;
+          }
+          .gif-container{
+            justify-content: center;
+            margin-left:40%;
+          }
+          .gradient-overlay {
+            margin-left: 40%;
+          }
+        
+    }
+    @media screen and (min-width: 3000px) {
+        .main_content{
+            position: absolute;
+            right: 54.5%;
+          }
+          img{
+            margin-left: 40%;
+          }
+          .gif-container{
+            justify-content: center;
+            margin-left:40%;
+          }
+          .gradient-overlay {
+            margin-left: 40%;
+          }
+        
+    }
